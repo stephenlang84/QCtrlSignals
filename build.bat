@@ -3,4 +3,10 @@ mkdir build
 cd build
 cmake -DCMAKE_PREFIX_PATH=%CMAKE_PREFIX_PATH% ..
 cmake --build . --config Release
+mkdir SigTest-build
+cd SigTest-build
+cmake -DCMAKE_PREFIX_PATH=%CMAKE_PREFIX_PATH% ../../SigTest
+cmake --build . --config Release
+
+
 
